@@ -1,0 +1,9 @@
+archivesBaseName = 'helios-data-redis'
+
+dependencies {
+  compile "com.google.guava:guava:$guavaVersion"
+  compile("org.springframework.boot:spring-boot-starter-data-redis:$springBootVersion")
+  compile "com.google.guava:guava:$guavaVersion"
+
+  testCompile("org.springframework.boot:spring-boot-starter-test:$springBootVersion")
+}

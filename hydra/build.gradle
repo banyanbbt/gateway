@@ -1,0 +1,75 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'application'
+
+group = 'org.banyan.gateway'
+applicationName = 'hydra'
+version = '1.0.0'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+buildDir = 'target'
+
+repositories {
+  mavenLocal()
+  mavenCentral()
+}
+
+ext {
+  springBootDubboVersion = '1.0.0'
+  heliosVersion = '1.0.0'
+  dorisVersion = '1.0.0'
+  aresVersion = '1.0.0'
+  panVersion = '1.0.0'
+  fastJsonVersion = '1.2.40'
+}
+
+dependencies {
+  compile "org.springframework.boot:spring-boot-starter"
+
+  compile "com.alibaba:fastjson:$fastJsonVersion"
+
+  compile "org.banyan.spring.boot:spring-boot-starter-dubbo:$springBootDubboVersion"
+
+  compile "org.banyan.gateway:helios-data-jpa:$heliosVersion"
+  compile "org.banyan.gateway:helios-util:$heliosVersion"
+  compile "org.banyan.gateway:helios-proto:$heliosVersion"
+
+  compile "org.banyan.gateway:doris:$dorisVersion"
+  compile "org.banyan.gateway:ares:$aresVersion"
+  compile "org.banyan.gateway:pan:$panVersion"
+
+  testCompile "org.springframework.boot:spring-boot-starter-test"
+}
+
+configurations {
+  compile.exclude group: "log4j", module: "log4j"
+  compile.exclude group: "org.slf4j", module: "slf4j-log4j12"
+}
+
+mainClassName = 'org.banyan.gateway.hydra.launcher.Launcher'
+
+buildscript {
+  ext {
+    springBootVersion = '1.5.6.RELEASE'
+    gradlePluginVersion = '1.0.3.RELEASE'
+  }
+
+  repositories {
+    mavenLocal()
+    mavenCentral()
+  }
+
+  dependencies {
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion")
+    classpath("io.spring.gradle:dependency-management-plugin:$gradlePluginVersion")
+  }
+}
+
+startScripts {
+  doLast {
+    unixScript.text = unixScript.text.replaceAll("lib/(.*)\n", "lib/\\*")
+  }
+}

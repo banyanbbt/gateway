@@ -1,0 +1,50 @@
+allprojects {
+  apply plugin: 'java'
+  apply plugin: 'maven'
+
+  group = 'org.banyan.gateway'
+  version = '1.0.0'
+  
+  sourceCompatibility = 1.8
+  targetCompatibility = 1.8
+  [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+  buildDir = 'target'
+
+  repositories {
+    mavenLocal()
+    mavenCentral()
+  }
+
+  task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+  }
+
+  artifacts {
+    archives sourcesJar
+  }
+}
+
+subprojects {
+
+  ext {
+    slf4jVersion = '1.7.25'
+    commonsCodecVersion = '1.11'
+    jodaVersion = '2.9.9'
+    httpclientVersion = '4.5.4'
+    springBootVersion = '1.5.6.RELEASE'
+    springBootHbaseVersion = '1.0.0'
+    codecVersion = '1.0.0'
+    guavaVersion = '12.0.1'
+  }
+
+  dependencies {
+    compile "org.slf4j:slf4j-api:$slf4jVersion"
+
+    testCompile "junit:junit:4.12"
+  }
+
+  compileJava {
+    options.compilerArgs = ["-parameters"]
+  }
+}

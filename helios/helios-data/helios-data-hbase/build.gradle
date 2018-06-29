@@ -1,0 +1,5 @@
+archivesBaseName = 'helios-data-hbase'
+
+dependencies {
+  compile("org.banyan.spring.boot:spring-boot-starter-hbase:$springBootHbaseVersion")
+}

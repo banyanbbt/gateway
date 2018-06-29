@@ -1,0 +1,5 @@
+archivesBaseName = 'helios-data-mongo'
+
+dependencies {
+  compile("org.springframework.boot:spring-boot-starter-data-mongodb:$springBootVersion")
+}

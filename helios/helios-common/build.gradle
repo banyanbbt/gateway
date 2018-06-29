@@ -1,0 +1,5 @@
+archivesBaseName = 'helios-common'
+
+dependencies {
+
+}

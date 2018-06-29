@@ -1,0 +1,1 @@
+create 'mobile_cards', {NAME => 'f', VERSIONS => 1, COMPRESSION => 'SNAPPY'}, {NUMREGIONS => 3, SPLITALGO => 'HexStringSplit'}

@@ -1,0 +1,15 @@
+allprojects {
+
+}
+
+subprojects {
+
+  ext {
+
+  }
+
+  dependencies {
+    compile project(':helios-common')
+    compile project(':helios-util')
+  }
+}

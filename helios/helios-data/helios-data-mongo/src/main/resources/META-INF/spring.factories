@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.banyan.gateway.helios.data.mongo.configuration.MongoClientConfiguration,\
+org.banyan.gateway.helios.data.mongo.configuration.MongoConfiguration

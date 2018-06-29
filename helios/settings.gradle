@@ -1,0 +1,2 @@
+include 'helios-util', 'helios-common', 'helios-proto'
+include 'helios-data:helios-data-jpa', 'helios-data:helios-data-mongo', 'helios-data:helios-data-hbase', 'helios-data:helios-data-rabbitmq', 'helios-data:helios-data-redis'

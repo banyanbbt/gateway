@@ -1,0 +1,15 @@
+archivesBaseName = 'helios-util'
+
+ext {
+  jacksonVersion = '2.8.11.1'
+}
+
+dependencies {
+  compile project(':helios-common')
+  compile "commons-codec:commons-codec:$commonsCodecVersion"
+  compile "joda-time:joda-time:$jodaVersion"
+  compile "org.apache.httpcomponents:httpclient:$httpclientVersion"
+  compile "commons-lang:commons-lang:2.6"
+  compile "org.banyan.common:banyan-codec:$codecVersion"
+  compile "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
+}

@@ -1,0 +1,11 @@
+archivesBaseName = 'helios-proto'
+
+ext {
+  fastJsonVersion = '1.2.40'
+}
+
+dependencies {
+  compile project(':helios-common')
+  compile "com.google.guava:guava:$guavaVersion"
+  compile "com.alibaba:fastjson:$fastJsonVersion"
+}

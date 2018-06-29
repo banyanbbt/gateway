@@ -1,0 +1,9 @@
+archivesBaseName = 'helios-data-rabbitmq'
+
+dependencies {
+  compile("org.springframework.boot:spring-boot-starter-amqp:$springBootVersion")
+}
+
+configurations {
+  compile.exclude group: "org.springframework", module: "spring-web"
+}

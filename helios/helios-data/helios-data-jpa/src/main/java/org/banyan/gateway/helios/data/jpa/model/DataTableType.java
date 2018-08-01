@@ -12,5 +12,5 @@ public enum DataTableType {
     MOBILE_CARDS,
     MOBILE_CARD,
     CARD_QUOTA,
-    MOBILE_QUOTA;
+    MOBILE_QUOTA
 }

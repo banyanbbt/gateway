@@ -11,5 +11,5 @@ package org.banyan.gateway.helios.data.jpa.model;
 public enum SourceType {
     OWN,            // 我方数据
     THIRDPARTY,      // 第三方数据
-    MIXED;          // 混合数据
+    MIXED          // 混合数据
 }

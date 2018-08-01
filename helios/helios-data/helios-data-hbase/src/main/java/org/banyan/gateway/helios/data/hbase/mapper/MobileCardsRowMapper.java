@@ -27,7 +27,7 @@ public class MobileCardsRowMapper implements RowMapper<MobileCards> {
     private static byte[] NAME = "cards".getBytes();
 
     @Override
-    public MobileCards mapRow(Result result, int rowNum) throws Exception {
+    public MobileCards mapRow(Result result, int rowNum) {
         MobileCards mobileCards = new MobileCards();
         mobileCards.setMobile(Bytes.toString(result.getRow()));
         String cards = Bytes.toString(result.getValue(COLUMNFAMILY, NAME));

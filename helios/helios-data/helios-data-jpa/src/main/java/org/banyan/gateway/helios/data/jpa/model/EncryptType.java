@@ -10,5 +10,5 @@ package org.banyan.gateway.helios.data.jpa.model;
  * 2018年03月09日 19:34:00
  */
 public enum EncryptType {
-    CARD, MOBILE, CID, NAME;
+    CARD, MOBILE, CID, NAME
 }

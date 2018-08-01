@@ -13,5 +13,5 @@ public enum RequestStatus {
     // 成功
     SUCCESS,
     // 失败, 渠道异常
-    FAILED;
+    FAILED
 }

@@ -20,7 +20,7 @@ public enum Operator {
 
     private int number;
 
-    private Operator(String symbol, String label, int number) {
+    Operator(String symbol, String label, int number) {
         this.symbol = symbol;
         this.label = label;
         this.number = number;

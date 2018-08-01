@@ -11,5 +11,5 @@ package org.banyan.gateway.helios.data.jpa.model;
 public enum AccountGrade {
     BLUE, // 普通会员
     SILVER, // 银牌会员
-    GOLD; // 金牌会员
+    GOLD // 金牌会员
 }

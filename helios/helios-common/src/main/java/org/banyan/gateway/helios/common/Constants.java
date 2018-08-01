@@ -53,6 +53,7 @@ public class Constants {
 
 
     // 请求数据相关
+    public static final String CODE = "code";
     public static final String PRODUCT_ID = "productId";
     public static final String CUSTOMER_ID = "customerId";
     public static final String PORTRAITS = "portraits";
@@ -60,12 +61,15 @@ public class Constants {
     public static final String CARD = "card";
     public static final String PRODUCT = "product";
     public static final String GID = "gid";
-
+    public static final String MESSAGE = "message";
+    public static final String STATUS = "status";
+    public static final String RESULT = "result";
 
     // 验签相关
     public static final String ACCOUNT = "account";
     public static final String DATA = "data";
     public static final String ENCRYPT = "encrypt";
+    public static final String SIGN = "sign";
 
     public static final String UNKNOWN = "unknown";
     public static final int LIMITLESS_LENGTH = -1;

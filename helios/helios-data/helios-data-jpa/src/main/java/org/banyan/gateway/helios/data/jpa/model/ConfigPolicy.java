@@ -12,5 +12,5 @@ package org.banyan.gateway.helios.data.jpa.model;
 public enum ConfigPolicy {
     NONE,
     REPLACE,
-    CONTAINS;
+    CONTAINS
 }

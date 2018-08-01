@@ -59,7 +59,7 @@ public enum SubmitCode {
     private String status; // 状态
     private String message; // message
 
-    private SubmitCode(String code, String status, String message) {
+    SubmitCode(String code, String status, String message) {
         this.code = code;
         this.status = status;
         this.message = message;
@@ -80,7 +80,7 @@ public enum SubmitCode {
 
         private String msg; // msg
 
-        private ArgsFailedDetail(String msg) {
+        ArgsFailedDetail(String msg) {
             this.msg = msg;
         }
 

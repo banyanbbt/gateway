@@ -13,13 +13,14 @@ public enum Channel {
     JUHESHUJU("juheshuju", "聚合数据"),
     YUNYINGSHANG("yunyingshang", "运营商"),
     BAIDU("baidu", "百度"),
+    YONGHUHUAXIANG("yonghuhuaxiang", "用户画像")
     ;
 
     private String symbol;
 
     private String label;
 
-    private Channel(String symbol, String label) {
+    Channel(String symbol, String label) {
         this.symbol = symbol;
         this.label = label;
     }

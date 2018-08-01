@@ -41,6 +41,11 @@ public enum Interface {
     // 聚合数据
     JUHESHUJU_VEHICLE_VIOLATIO("JHSJvehicleviolation", JUHESHUJU, "全国车辆违章查询"),
 
+    // 画像类
+    YONGHUHUAXIANG_H0101("YHHX_H0101", Channel.YONGHUHUAXIANG, "个人消费类自定画像"),
+    YONGHUHUAXIANG_H0201("YHHX_H0201", Channel.YONGHUHUAXIANG, "个人电商消费行为画像"),
+    YONGHUHUAXIANG_H0301("YHHX_H0301", Channel.YONGHUHUAXIANG, "个人互联网行为画像"),
+
     ;
 
     private String iface;

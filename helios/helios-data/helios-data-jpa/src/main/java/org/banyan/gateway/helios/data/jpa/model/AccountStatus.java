@@ -11,5 +11,5 @@ package org.banyan.gateway.helios.data.jpa.model;
 public enum AccountStatus {
     ACTIVATED, // 激活
     PAUSED, // 赞停
-    DELETED; // 删除
+    DELETED // 删除
 }

@@ -46,6 +46,11 @@ public enum Interface {
     YONGHUHUAXIANG_H0201("YHHX_H0201", Channel.YONGHUHUAXIANG, "个人电商消费行为画像"),
     YONGHUHUAXIANG_H0301("YHHX_H0301", Channel.YONGHUHUAXIANG, "个人互联网行为画像"),
 
+    // 信贷类
+    XINDAI_DEBT("XDdebt", Channel.XINDAI, "共债信息"),
+    XINDAI_BLACK("XDblack", Channel.XINDAI, "借贷黑名单"),
+    XINDAI_WHITE("XDwhite", Channel.XINDAI, "借贷白名单"),
+    XINDAI_OVERDUE("XDoverdue", Channel.XINDAI, "借贷逾期"),
     ;
 
     private String iface;

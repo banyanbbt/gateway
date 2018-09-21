@@ -13,7 +13,8 @@ public enum Channel {
     JUHESHUJU("juheshuju", "聚合数据"),
     YUNYINGSHANG("yunyingshang", "运营商"),
     BAIDU("baidu", "百度"),
-    YONGHUHUAXIANG("yonghuhuaxiang", "用户画像")
+    YONGHUHUAXIANG("yonghuhuaxiang", "用户画像"),
+    XINDAI("xindai", "信用贷款")
     ;
 
     private String symbol;

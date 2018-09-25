@@ -51,6 +51,11 @@ public enum Interface {
     XINDAI_BLACK("XDblack", Channel.XINDAI, "借贷黑名单"),
     XINDAI_WHITE("XDwhite", Channel.XINDAI, "借贷白名单"),
     XINDAI_OVERDUE("XDoverdue", Channel.XINDAI, "借贷逾期"),
+
+    XINDAI_RADAR_REPORT("XDradarreport", Channel.XINDAI, "全景雷达报告"),
+    XINDAI_RADAR_APPLY("XDradarapply", Channel.XINDAI, "申请雷达报告"),
+    XINDAI_RADAR_CURRENT("XDradarcurrent", Channel.XINDAI, "信用现状报告"),
+    XINDAI_RADAR_BEHAVIOR("XDradarbehavior", Channel.XINDAI, "行为雷达报告"),
     ;
 
     private String iface;

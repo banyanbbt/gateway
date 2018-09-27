@@ -56,6 +56,11 @@ public enum Interface {
     XINDAI_RADAR_APPLY("XDradarapply", Channel.XINDAI, "申请雷达报告"),
     XINDAI_RADAR_CURRENT("XDradarcurrent", Channel.XINDAI, "信用现状报告"),
     XINDAI_RADAR_BEHAVIOR("XDradarbehavior", Channel.XINDAI, "行为雷达报告"),
+
+    // 工商类
+    GONGSHANG_BUSINESS_SIMPLE("GSbusinnesssimple", Channel.GONGSHANG, "工商基本信息查询"),
+    GONGSHANG_RISK_BUSINESS_VIP("GSriskbusinessvip", Channel.GONGSHANG, "企业风险概要查询"),
+    GONGSHANG_RISK_PERSON_VIP("GSriskpersonvip", Channel.GONGSHANG, "个人风险信息查询"),
     ;
 
     private String iface;

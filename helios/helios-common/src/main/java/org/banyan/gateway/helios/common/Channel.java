@@ -14,7 +14,8 @@ public enum Channel {
     YUNYINGSHANG("yunyingshang", "运营商"),
     BAIDU("baidu", "百度"),
     YONGHUHUAXIANG("yonghuhuaxiang", "用户画像"),
-    XINDAI("xindai", "信用贷款")
+    XINDAI("xindai", "信用贷款"),
+    GONGSHANG("gongshang", "工商信息"),
     ;
 
     private String symbol;

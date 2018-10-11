@@ -1,0 +1,43 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+
+group = 'org.banyan.gateway'
+version = '1.0.0'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+compileJava.options.encoding = 'UTF-8'
+buildDir = 'target'
+
+ext {
+  springBootVersion = '1.5.6.RELEASE'
+  springVersion = '4.3.10.RELEASE'
+  slf4jVersion = '1.7.25'
+  heliosVersion = '1.0.0'
+}
+
+repositories {
+  mavenLocal()
+  mavenCentral()
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+  classifier = 'sources'
+  from sourceSets.main.allSource
+}
+
+artifacts {
+  archives sourcesJar
+}
+
+dependencies {
+  compile "org.slf4j:slf4j-api:$slf4jVersion"
+  compile "org.springframework.boot:spring-boot-autoconfigure:$springBootVersion"
+
+  compile "org.banyan.gateway:helios-proto:$heliosVersion"
+  compile "org.banyan.gateway:helios-util:$heliosVersion"
+  compile "org.banyan.gateway:helios-data-rabbitmq:$heliosVersion"
+
+  testCompile "junit:junit:4.12"
+}

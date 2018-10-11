@@ -61,6 +61,11 @@ public enum Interface {
     GONGSHANG_BUSINESS_SIMPLE("GSbusinnesssimple", Channel.GONGSHANG, "工商基本信息查询"),
     GONGSHANG_RISK_BUSINESS_VIP("GSriskbusinessvip", Channel.GONGSHANG, "企业风险概要查询"),
     GONGSHANG_RISK_PERSON_VIP("GSriskpersonvip", Channel.GONGSHANG, "个人风险信息查询"),
+
+    // 车辆类
+    CHELIANG_DRIVING_QUERY("CLdrivingquery", Channel.CHELIANG, "驾驶证信息查询"),
+    CHELIANG_VEHICLE_CHECK("CLvehiclecheck", Channel.CHELIANG, "行驶证信息查询"),
+    CHELIANG_VEHICLE_VIOLATION("CLvehicleviolation", Channel.CHELIANG, "车辆违章信息查询"),
     ;
 
     private String iface;

@@ -1,9 +1,9 @@
-package org.banyan.gateway.helios.proto.iface.thirdparty.hydra;
+package org.banyan.gateway.helios.proto.iface.thirdparty.juno;
 
 import org.banyan.gateway.helios.proto.dto.thirdparty.BaseResponse;
-import org.banyan.gateway.helios.proto.dto.thirdparty.hydra.DrivingQuiryInfoRequest;
-import org.banyan.gateway.helios.proto.dto.thirdparty.hydra.VehicleLicenseInfoRequest;
-import org.banyan.gateway.helios.proto.dto.thirdparty.hydra.VehicleViolationInquiryInfoRequest;
+import org.banyan.gateway.helios.proto.dto.thirdparty.juno.DrivingQuiryInfoRequest;
+import org.banyan.gateway.helios.proto.dto.thirdparty.juno.VehicleLicenseInfoRequest;
+import org.banyan.gateway.helios.proto.dto.thirdparty.juno.VehicleViolationInquiryInfoRequest;
 
 /**
  * Copyright (C), 2018, Banyan Network Foundation
@@ -15,7 +15,7 @@ import org.banyan.gateway.helios.proto.dto.thirdparty.hydra.VehicleViolationInqu
  * <p>
  * 2018/9/5 15:01
  */
-public interface IHydraService {
+public interface IJunoService {
 
     /**
      * 驾驶证信息查询

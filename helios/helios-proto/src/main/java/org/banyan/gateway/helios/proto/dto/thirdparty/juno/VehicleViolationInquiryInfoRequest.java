@@ -1,4 +1,4 @@
-package org.banyan.gateway.helios.proto.dto.thirdparty.hydra;
+package org.banyan.gateway.helios.proto.dto.thirdparty.juno;
 
 /**
  * Copyright (C), 2018, Banyan Network Foundation
